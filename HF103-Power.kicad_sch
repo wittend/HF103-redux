@@ -988,7 +988,7 @@
     (uuid 264716da-8682-470b-ad91-aa01a7a9d680)
   )
 
-  (wire (pts (xy 60.96 73.66) (xy 67.31 73.66))
+  (wire (pts (xy 63.5 73.66) (xy 67.31 73.66))
     (stroke (width 0) (type default))
     (uuid 276902ac-8751-4d3b-a3e4-cbf2bb458251)
   )
@@ -1165,7 +1165,7 @@
     (stroke (width 0) (type default))
     (uuid c5472326-cfc6-437c-81c1-a3c6bd6407e6)
   )
-  (wire (pts (xy 60.96 67.31) (xy 60.96 73.66))
+  (wire (pts (xy 63.5 76.2) (xy 63.5 73.66))
     (stroke (width 0) (type default))
     (uuid cb071cbb-7e9a-4e4b-819a-a6a3e7e14ec1)
   )
@@ -1478,6 +1478,31 @@
       (project "HF103-redux"
         (path "/a6bdb5ae-8f9c-40cb-b68a-86d3cad405bf/8c380369-8e8f-45e8-9e3f-03ede4dd855a"
           (reference "C10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 63.5 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 544a22f3-9015-4d29-ac19-f72937deda93)
+    (property "Reference" "#PWR043" (at 63.5 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 60.96 76.2 0)
+      (effects (font (size 1 1)))
+    )
+    (property "Footprint" "" (at 63.5 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 63.5 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 70756cf6-5f15-4561-baad-38e968bffa8f))
+    (instances
+      (project "HF103-redux"
+        (path "/a6bdb5ae-8f9c-40cb-b68a-86d3cad405bf/8c380369-8e8f-45e8-9e3f-03ede4dd855a"
+          (reference "#PWR043") (unit 1)
         )
       )
     )
